@@ -17,4 +17,7 @@ alias kc='keychain'
 
 set -g fish_color_autosuggestion '#999999'
 
-fastfetch --kitty-direct /Users/gourav/.config/fastfetch/shell_logo.png
+if test "$TERM" = xterm-kitty
+    # Terminal is Kitty — supports graphics
+    fastfetch --kitty-direct /Users/gourav/.config/fastfetch/shell_logo.png
+end
