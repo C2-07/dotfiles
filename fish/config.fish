@@ -10,7 +10,6 @@ alias g='git'
 alias v='nvim'
 alias zshrc='nvim ~/.zshrc'
 alias reload='source ~/.zshrc'
-alias c='clear'
 alias kc='keychain'
 
 # === KEYBINDINGS ===

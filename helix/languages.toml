@@ -1,0 +1,58 @@
+[[language]]
+name = "python"
+formatter = { command = "black", args = ["-"] }
+auto-format = true
+language-servers = ["pyright"]
+
+[[language]]
+name = "c"
+formatter = { command = "clang-format" }
+auto-format = false
+language-servers = ["clangd"]
+
+[[language]]
+name = "cpp"
+formatter = { command = "clang-format" }
+auto-format = true
+language-servers = ["clangd"]
+
+[[language]]
+name = "rust"
+auto-format = true
+language-servers = ["rust-analyzer"]
+
+[[language]]
+name = "javascript"
+formatter = { command = "prettier", args = ["--stdin-filepath", "file.js"] }
+auto-format = true
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = ["--stdin-filepath", "file.ts"] }
+auto-format = true
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "html"
+formatter = { command = "prettier", args = ["--stdin-filepath", "file.html"] }
+auto-format = true
+language-servers = ["vscode-html-language-server"]
+
+[[language]]
+name = "css"
+formatter = { command = "prettier", args = ["--stdin-filepath", "file.css"] }
+auto-format = true
+language-servers = ["vscode-css-language-server"]
+
+[[language]]
+name = "go"
+formatter = { command = "gofmt" }
+auto-format = true
+language-servers = ["gopls"]
+
+[[language]]
+name = "lua"
+formatter = { command = "stylua", args = ["-"] }
+auto-format = true
+language-servers = ["lua-language-server"]
