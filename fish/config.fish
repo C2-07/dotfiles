@@ -3,7 +3,7 @@ export HOMEBREW_NO_ENV_HINTS=1
 
 # === ALIASES ===
 alias cls='clear'
-alias ls='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions'
+alias ls='eza --sort type --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions'
 alias reload='source ~/dotfiles/fish/config.fish'
 alias kc='keychain'
 alias helix='hx'
@@ -13,7 +13,8 @@ alias cat='bat'
 alias export='set -x VAR'
 alias cd='z'
 alias find='fd'
-alias grep='ripgrep'
+alias grep='rg'
+alias man='batman'
 
 zoxide init fish | source
 thefuck --alias | source
