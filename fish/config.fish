@@ -1,5 +1,12 @@
+starship init fish | source
+
 # Homebrew warning
 export HOMEBREW_NO_ENV_HINTS=1
+
+# Enable Nix in fish
+if test -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+    bass source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+end
 
 # === ALIASES ===
 alias cls='clear'
@@ -17,7 +24,6 @@ alias grep='rg'
 alias man='batman'
 
 zoxide init fish | source
-thefuck --alias | source
 # === KEYBINDINGS ===
 
 # === Theme ===
