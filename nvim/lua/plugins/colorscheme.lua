@@ -23,8 +23,8 @@ return {
                 comments = { "italic" }, -- Change the style of comments
                 conditionals = { "italic" },
                 loops = {},
-                functions = {},
-                keywords = {},
+                functions = { "bold" },
+                keywords = { "italic" },
                 strings = {},
                 variables = {},
                 numbers = {},
@@ -71,6 +71,14 @@ return {
                 treesitter = true,
                 treesitter_context = true,
                 which_key = true,
+            },
+            highlight_overrides = {
+                all = function(colors)
+                    return {
+                        Visual = { bg = "#1f212a" },
+                        CursorLine = { bg = "#1e1f2a" }, -- Current line background
+                    }
+                end,
             },
         },
         config = function(_, opts)

@@ -1,23 +1,25 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "kitty", // or "sixel" or "iterm2" depending on your terminal
+    "type": "kitty",
     "source": "/Users/gourav/.config/fastfetch/shell_logo.png",
-    "width": 35,
-    "height": 18,
+    "width": 20,
+    "height": 9,
     "padding": {
-      "top": 3,
+      "top": 2,
       "right": 4,
       "left": 0,
     },
     "preserveAspectRatio": true,
   },
-  "display": { "separator": "  " },
+  "display": {
+    "separator": "  ",
+  },
   "modules": [
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Hardware────────────────────────┐",
+      // "format": "\u001b[90m┌──────────────────────Hardware────────────────────────┐",
     },
     {
       "type": "host",
@@ -29,11 +31,11 @@
       "key": "│ ├",
       "keyColor": "green",
     },
-    {
-      "type": "gpu",
-      "key": "│ ├󰍛",
-      "keyColor": "green",
-    },
+    // {
+    //   "type": "gpu",
+    //   "key": "│ ├󰍛",
+    //   "keyColor": "green",
+    // },
     {
       "type": "memory",
       "key": "│ ├󰍛",
@@ -41,17 +43,17 @@
     },
     {
       "type": "disk",
-      "key": "└ └",
+      "key": "└ └󰍛",
       "keyColor": "green",
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└──────────────────────────────────────────────────────┘",
+      // "format": "\u001b[90m└──────────────────────────────────────────────────────┘",
     },
-    "break",
+    // "break",
     {
       "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Software────────────────────────┐",
+      // "format": "\u001b[90m┌──────────────────────Software────────────────────────┐",
     },
     {
       "type": "os",
@@ -59,78 +61,24 @@
       "keyColor": "yellow",
     },
     {
-      "type": "kernel",
-      "key": "│ ├",
-      "keyColor": "yellow",
-    },
-    // {
-    //   "type": "bios",
-    //   "key": "│ ├",
-    //   "keyColor": "yellow",
-    // },
-    // {
-    //   "type": "packages",
-    //   "key": "│ ├󰏖",
-    //   "keyColor": "yellow",
-    // },
-    {
       "type": "shell",
-      "key": "└ └",
+      "key": "└ └",
       "keyColor": "yellow",
-    },
-    "break",
-    {
-      "type": "de",
-      "key": " DE",
-      "keyColor": "blue",
-    },
-    {
-      "type": "lm",
-      "key": "│ ├",
-      "keyColor": "blue",
-    },
-    {
-      "type": "wm",
-      "key": "│ ├",
-      "keyColor": "blue",
-    },
-    {
-      "type": "wmtheme",
-      "key": "│ ├󰉼",
-      "keyColor": "blue",
     },
     {
       "type": "terminal",
       "key": "└ └",
-      "keyColor": "blue",
+      "keyColor": "yellow",
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└──────────────────────────────────────────────────────┘",
+      // "format": "\u001b[90m└──────────────────────────────────────────────────────┘",
     },
-    "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌──────────────────────UpTime──────────────────────────┐",
-    },
-    {
-      "type": "uptime",
-      "key": "  Uptime ",
-      "keyColor": "magenta",
-    },
-    {
-      "type": "custom",
-      "format": "\u001b[90m└──────────────────────────────────────────────────────┘",
-    },
-
-    //        {
-    //            "type": "colors"
-    //        },
-
-    {
-      "type": "colors",
-      "paddingLeft": 18,
-      "symbol": "circle",
-    },
+    // "break",
+    // {
+    //   "type": "colors",
+    //   "paddingLeft": 19,
+    //   "symbol": "circle",
+    // },
   ],
 }
