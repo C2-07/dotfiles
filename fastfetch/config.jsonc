@@ -4,7 +4,7 @@
     "type": "kitty",
     "source": "/Users/gourav/.config/fastfetch/shell_logo.png",
     "width": 20,
-    "height": 9,
+    "height": 8,
     "padding": {
       "top": 2,
       "right": 4,
@@ -17,10 +17,11 @@
   },
   "modules": [
     "break",
-    {
-      "type": "custom",
-      // "format": "\u001b[90m┌──────────────────────Hardware────────────────────────┐",
-    },
+    "break",
+    // {
+    //   "type": "custom",
+    // "format": "\u001b[90m┌──────────────────────Hardware────────────────────────┐",
+    // },
     {
       "type": "host",
       "key": " PC",
@@ -46,10 +47,10 @@
       "key": "└ └󰍛",
       "keyColor": "green",
     },
-    {
-      "type": "custom",
-      // "format": "\u001b[90m└──────────────────────────────────────────────────────┘",
-    },
+    // {
+    // "type": "custom",
+    // "format": "\u001b[90m└──────────────────────────────────────────────────────┘",
+    // },
     // "break",
     {
       "type": "custom",
@@ -62,7 +63,7 @@
     },
     {
       "type": "shell",
-      "key": "└ └",
+      "key": "│ ├",
       "keyColor": "yellow",
     },
     {
@@ -71,7 +72,7 @@
       "keyColor": "yellow",
     },
     {
-      "type": "custom",
+      // "type": "custom",
       // "format": "\u001b[90m└──────────────────────────────────────────────────────┘",
     },
     // "break",

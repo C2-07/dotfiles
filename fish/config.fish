@@ -29,9 +29,12 @@ zoxide init fish | source
 # === Theme ===
 set -g fish_color_autosuggestion '#999999'
 
-# Fastfetch image if terminal supports it
+# For FastFetch Image Setup
 if test "$TERM" = xterm-kitty
-    fastfetch --kitty-direct ~/.config/fastfetch/shell_logo.png
-else
-    fastfetch -l none
+    # Terminal is Kitty — supports graphics
+    fastfetch --kitty-direct /Users/gourav/.config/fastfetch/shell_logo.png
+else if status --is-interactive
+    if test "$TERM_PROGRAM" != vscode
+        fastfetch -l none
+    end
 end
