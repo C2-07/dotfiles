@@ -21,6 +21,7 @@ return {
         c = true,
         cpp = true,
         rust = true,
+        swift = true,
       }
 
       if allowed[ft] then
@@ -44,6 +45,7 @@ return {
       lua = { "stylua" },
       astro = { "prettier" },
       python = { "ruff_format" },
+      swift = { "swiftformat" },
     },
   },
 }

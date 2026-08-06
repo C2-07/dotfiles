@@ -6,6 +6,8 @@ return {
 			"stylua",
 			"prettier",
 			"tree-sitter-cli",
+			"swiftformat",
+			"swiftlint",
 		},
 	},
 	config = function(_, opts)

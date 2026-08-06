@@ -88,6 +88,9 @@ map("n", "<leader>gd", ":Gitsigns preview_hunk_inline<CR>")
 map({ "n", "t" }, "<C-_>", "<cmd>ToggleTerm<CR>", {
   desc = "Toggle Terminal",
 })
+map({ "n", "t" }, "<C-/>", "<cmd>ToggleTerm<CR>", {
+  desc = "Toggle Terminal",
+})
 
 -- Neovide
 if vim.g.neovide then

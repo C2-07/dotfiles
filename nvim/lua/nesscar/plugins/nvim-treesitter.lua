@@ -21,6 +21,7 @@ return {
       "yaml",
       "toml",
       "astro",
+      "swift",
     },
     auto_install = true,
     highlight = { enable = true },

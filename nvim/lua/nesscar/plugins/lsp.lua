@@ -66,6 +66,10 @@ return {
         on_attach = on_attach,
         capabilities = capabilities,
       }
+      vim.lsp.config.sourcekit = {
+        on_attach = on_attach,
+        capabilities = capabilities,
+      }
 
       vim.lsp.enable({
         "ruff",
@@ -76,6 +80,7 @@ return {
         "cssls",
         "astro",
         "biome",
+        "sourcekit",
       })
     end,
   },

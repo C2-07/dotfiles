@@ -1,0 +1,1 @@
+disable captive portal\n sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
