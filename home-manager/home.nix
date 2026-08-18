@@ -14,33 +14,50 @@
   home.packages = with pkgs; [
     # core
     aria2
-    bat
     dust
     eza
+    just
     fd
     stow
     gh
     ripgrep
     zoxide
-    glow # Markdown Reader
-    # inetutils # telnet etc by GNU.
-    tealdeer # tldr (rust)
+    glow
+    tealdeer
+    bat
+    bat-extras.batdiff
+    bat-extras.batgrep
+    bat-extras.batpipe
 
     # dev
     fish
     neovim
     nodejs
+    bun
     tmux
     hyperfine
     silicon
 
-    # alejandra
-    # nil
+    # networking
+    iperf3
 
-    # lang
+    # media / files
+    ffmpeg
+    gallery-dl
+    mdcat
+    yazi
+# git
+    delta
+    git-filter-repo
+    jujutsu
+
+    # languages
     rustup
     bear
     uv
+
+    # utilities
+    parallel
 
     # shell
     starship

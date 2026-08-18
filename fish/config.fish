@@ -114,7 +114,9 @@ function fish_greeting
 end
 
 
+alias man="batman"
 alias neo="neovide --fork"
+alias fzf="sk"
 alias yz=yazi
 alias vi=nvim
 alias reload="source ~/.config/fish/config.fish"
@@ -276,3 +278,6 @@ set -gx MANPATH $MANPATH (/usr/bin/manpath)
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+# Added by Antigravity IDE
+fish_add_path /Users/gourav/.antigravity-ide/antigravity-ide/bin
