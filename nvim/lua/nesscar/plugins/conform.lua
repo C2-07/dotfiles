@@ -44,7 +44,7 @@ return {
       markdown = { "prettier" },
       lua = { "stylua" },
       astro = { "prettier" },
-      python = { "ruff_format" },
+      python = { "ruff_organize_imports", "ruff_format" },
       swift = { "swiftformat" },
     },
   },

@@ -58,11 +58,11 @@ end)
 
 -- Formatting
 map("n", "<leader>cf", function()
-  require("conform").format({ async = true, lsp_fallback = false })
+  require("conform").format({ async = true, lsp_format = "fallback" })
 end, { desc = "Format file (conform)" })
 
 vim.api.nvim_create_user_command("Format", function()
-  vim.lsp.buf.format({ async = true })
+  require("conform").format({ async = true, lsp_format = "fallback" })
 end, {})
 
 -- Buffers

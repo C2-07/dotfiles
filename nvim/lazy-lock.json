@@ -4,6 +4,7 @@
   "conform.nvim": { "branch": "master", "commit": "619363c30309d29ffa631e67c8183f2a72caa373" },
   "cord.nvim": { "branch": "master", "commit": "b08b9245d2973eda91437d2de5c8746b9f510d31" },
   "fff.nvim": { "branch": "main", "commit": "18f546a4fe8939d884b495a7d761f4905ad205a3" },
+  "flash.nvim": { "branch": "main", "commit": "b6346946d10d07998efee029fb0f7a593806d0cd" },
   "friendly-snippets": { "branch": "main", "commit": "6cd7280adead7f586db6fccbd15d2cac7e2188b9" },
   "fzf-lua": { "branch": "main", "commit": "774150bc05f774af1df614f55d156b3318c6decd" },
   "gitsigns.nvim": { "branch": "main", "commit": "eb60cc7b94c46005237fd34170d76f3a089a90aa" },
